@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+</div>
+<div class="d-flex  gap-3 align-items-center  justify-content-center ">
+    <p>already have an account</p>
+    
+    <!-- Modal trigger button -->
+    <button
+        type="button"
+        class="btn btn-success  btn-md"
+        data-bs-toggle="modal"
+        data-bs-target="#modalId"
+    >
+        Login
+    </button>
+    
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div
+        class="modal fade"
+        id="modalId"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                      login 
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <form class="row">
+                            <div>
+                                <label for="" class="form-label">Email</label>
+                                <input class="form-control " type="text">
+                            </div>
+
+                            <div>
+                                <label for="" class="form-label">Password</label>
+                                <input class="form-control " type="text">
+                            </div>
+                            <button class="btn btn-dark mt-3 w-50 m-auto ">login</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+    
+</div>
+
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./typed.js"></script>
+    <script src="./aos.js"></script>
+    <script src="purecounter_vanilla.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
